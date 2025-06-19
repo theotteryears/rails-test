@@ -83,8 +83,8 @@ test:
 production:
   primary: &primary_production
     <<: *default
-    database: mdatabase_r9hs
-    username: mdatabase_r9hs_user
+    database: my_app_production
+    username: my_app
     password: <%= ENV["MY_APP_DATABASE_PASSWORD"] %>
   cache:
     <<: *primary_production
